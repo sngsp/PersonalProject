@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rQe-1w-ybp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KBOClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tcm-cz-YUX">
+                                <rect key="frame" x="75" y="83" width="243" height="120"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pxG-zd-B5B">
+                                <rect key="frame" x="75" y="223" width="243" height="510"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-OL-7bp">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="510"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-Cl-nIo">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Doosan Bears"/>
+                                                <connections>
+                                                    <action selector="doosanTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFu-gY-U0d"/>
+                                                    <segue destination="ekK-Cf-CUC" kind="showDetail" identifier="showDetail" id="bVW-uG-jbD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AU-xf-a5o">
+                                                <rect key="frame" x="0.0" y="52" width="243" height="42"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Hanwha Eagles"/>
+                                                <connections>
+                                                    <action selector="hanwhaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zn9-Rw-eeM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-h4-S8k">
+                                                <rect key="frame" x="0.0" y="104" width="243" height="42"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="KIA Tigers"/>
+                                                <connections>
+                                                    <action selector="kiaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3S0-mu-pAZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGW-KS-PpP">
+                                                <rect key="frame" x="0.0" y="156" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" red="0.66274511810000003" green="0.50588238240000005" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Kiwoom Heroes"/>
+                                                <connections>
+                                                    <action selector="kiwoomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRa-TJ-IxH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-qD-7wT">
+                                                <rect key="frame" x="0.0" y="208" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="KT Wiz"/>
+                                                <connections>
+                                                    <action selector="ktTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYp-7H-zon"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BZ-XY-JoE">
+                                                <rect key="frame" x="0.0" y="260" width="243" height="42"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="LG Twins"/>
+                                                <connections>
+                                                    <action selector="lgTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hri-fp-YyK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE8-Tf-D9w">
+                                                <rect key="frame" x="0.0" y="312" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" red="0.74901962280000001" green="0.1725490093" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Lotte Giants"/>
+                                                <connections>
+                                                    <action selector="lotteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="it8-nK-Sxp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5R-Xg-sot">
+                                                <rect key="frame" x="0.0" y="364" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" red="0.66666668650000005" green="0.57254904510000004" blue="0.49411764740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="NC Dinos"/>
+                                                <connections>
+                                                    <action selector="ncTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXn-57-CmN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErY-jH-oOW">
+                                                <rect key="frame" x="0.0" y="416" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Samsung Lions"/>
+                                                <connections>
+                                                    <action selector="samsungTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLk-Cw-UpA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkD-V4-0q0">
+                                                <rect key="frame" x="0.0" y="468" width="243" height="42"/>
+                                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="SSG Landers"/>
+                                                <connections>
+                                                    <action selector="ssgTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LqC-Lc-BHX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxG-zd-B5B" secondAttribute="trailing" constant="75" id="5Ss-1v-hA1"/>
+                            <constraint firstItem="pxG-zd-B5B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="7Es-1E-Zqo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tcm-cz-YUX" secondAttribute="bottom" constant="615" id="8JH-nV-IX4"/>
+                            <constraint firstItem="tcm-cz-YUX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="J11-g6-NcB"/>
+                            <constraint firstItem="tcm-cz-YUX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="La2-46-QuP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxG-zd-B5B" secondAttribute="trailing" constant="75" id="Lkv-Yf-gaG"/>
+                            <constraint firstItem="pxG-zd-B5B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="ctG-W3-QDm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcm-cz-YUX" secondAttribute="trailing" constant="75" id="iaP-He-BHC"/>
+                            <constraint firstItem="pxG-zd-B5B" firstAttribute="top" secondItem="tcm-cz-YUX" secondAttribute="bottom" constant="20" id="wMK-9c-mz2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oux-b4-Rkq"/>
+                    <connections>
+                        <outlet property="doosanButton" destination="yJE-Cl-nIo" id="bMP-SS-qNw"/>
+                        <outlet property="hanwhaButton" destination="3AU-xf-a5o" id="gUa-IJ-Ekl"/>
+                        <outlet property="kiaButton" destination="5W3-h4-S8k" id="7NX-vo-5co"/>
+                        <outlet property="kiwoomButton" destination="gGW-KS-PpP" id="oBl-dI-VNA"/>
+                        <outlet property="ktButton" destination="RZ9-qD-7wT" id="T9c-BP-RYl"/>
+                        <outlet property="lgButton" destination="9BZ-XY-JoE" id="T72-1v-wgg"/>
+                        <outlet property="lotteButton" destination="WE8-Tf-D9w" id="o1Y-4n-yNX"/>
+                        <outlet property="mainLogo" destination="tcm-cz-YUX" id="f2o-c3-1bt"/>
+                        <outlet property="ncButton" destination="Q5R-Xg-sot" id="vEy-44-WNT"/>
+                        <outlet property="samsungButton" destination="ErY-jH-oOW" id="HCW-5Q-dTO"/>
+                        <outlet property="ssgButton" destination="RkD-V4-0q0" id="5xg-wk-jsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967.175572519084" y="-27.464788732394368"/>
+        </scene>
+        <!--New Detail View Controller-->
+        <scene sceneID="fTh-3V-jpW">
+            <objects>
+                <viewController id="ekK-Cf-CUC" customClass="NewDetailViewController" customModule="KBOClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWV-uL-ww8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iON-hd-aHG">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="212"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="puf-Xb-2YZ">
+                                <rect key="frame" x="30" y="20" width="333" height="172"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-Ud-Otv">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="172"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Ffh-3U-gM7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdM-Rc-nfv">
+                                        <rect key="frame" x="108" y="0.0" width="225" height="172"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RB5-DW-ggT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RB5-DW-ggT" firstAttribute="trailing" secondItem="puf-Xb-2YZ" secondAttribute="trailing" constant="30" id="75k-hE-KcM"/>
+                            <constraint firstItem="iON-hd-aHG" firstAttribute="trailing" secondItem="RB5-DW-ggT" secondAttribute="trailing" id="DIe-3p-aaO"/>
+                            <constraint firstItem="iON-hd-aHG" firstAttribute="leading" secondItem="RB5-DW-ggT" secondAttribute="leading" id="PHD-R1-Fx9"/>
+                            <constraint firstItem="puf-Xb-2YZ" firstAttribute="top" secondItem="RB5-DW-ggT" secondAttribute="top" constant="20" id="Pjz-xZ-aaX"/>
+                            <constraint firstItem="RB5-DW-ggT" firstAttribute="bottom" secondItem="iON-hd-aHG" secondAttribute="bottom" constant="630" id="Xnc-im-UPY"/>
+                            <constraint firstItem="iON-hd-aHG" firstAttribute="top" secondItem="RB5-DW-ggT" secondAttribute="top" id="fEY-Sc-5GT"/>
+                            <constraint firstItem="RB5-DW-ggT" firstAttribute="bottom" secondItem="puf-Xb-2YZ" secondAttribute="bottom" constant="650" id="fuw-PA-Gew"/>
+                            <constraint firstItem="puf-Xb-2YZ" firstAttribute="leading" secondItem="RB5-DW-ggT" secondAttribute="leading" constant="30" id="sK3-y2-KXO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundLabel" destination="iON-hd-aHG" id="9lg-Fi-FND"/>
+                        <outlet property="detailLabel" destination="GdM-Rc-nfv" id="9ux-Ga-9We"/>
+                        <outlet property="logoImageView" destination="sCD-Ud-Otv" id="9gd-Tp-vfi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Efo-se-9da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.9465648854962" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Izo-lE-0bw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rQe-1w-ybp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mzc-1f-Xpc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Jl-G2-ChB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlX-d1-bC7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1245" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
